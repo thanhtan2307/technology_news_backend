@@ -6,7 +6,7 @@ const meRouter = require('./me')
 const authRouter = require('./auth')
 const searchRouter = require('./search')
 const categoryRouter = require('./category')
-//const newsRouter = require('./news')
+const newsRouter = require('./news')
 
 const route = (app) => {
     app.use('/api/site', siteRouter)
@@ -17,7 +17,7 @@ const route = (app) => {
     app.use('/api/auth', authRouter)
     app.use('/api/search', searchRouter)
     app.use('/api/categories', categoryRouter)
-//     app.use('/api/news', newsRouter)
+     app.use('/api/news', newsRouter)
 }
 
 module.exports = route
