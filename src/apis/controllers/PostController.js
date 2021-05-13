@@ -554,6 +554,9 @@ class PostController {
             })
     }
 
+    Crawler = (req, res, next) => {
+       
+    }
 }
 
 const postController = new PostController()
